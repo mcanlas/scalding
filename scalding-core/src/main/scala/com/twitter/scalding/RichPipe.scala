@@ -53,7 +53,7 @@ object RichPipe extends java.io.Serializable {
    * @param p a pipe, whose name should be changed
    * @return a pipe with a new name which is guaranteed to be new and never re-assigned by this function
    *
-   * Note: the assigned name includes a few characters from the former name to assisgit dift in debugging.
+   * Note: the assigned name includes a few characters from the former name to assist in debugging.
    */
   def assignName(p: Pipe): Pipe = new Pipe(getNextName + "-" + getFormerNameBit(p), p)
 
